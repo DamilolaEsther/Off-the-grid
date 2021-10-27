@@ -1,0 +1,92 @@
+.gridcontainer {
+
+    display: grid;
+  
+    height: 600px;
+  
+    /* grid-template-columns: 200px 200px 200px; */
+  
+    grid-template-columns: repeat(10, 1fr);
+  
+    grid-template-rows: repeat(10, 1fr);
+  
+    background-color: rgb(12, 110, 77);
+  
+    grid-gap: 2px;
+  
+    /* start, end, center, stretch*/
+  
+    align-items: stretch;
+  
+    justify-items: stretch;
+  
+    /* start, end, center, stretch, space-around, space-between, space-evenly */
+  
+    align-content: start;
+  
+    justify-content: end;
+  
+  }
+  
+.Header {
+
+    background-color: rgb(221, 49, 49);
+
+    grid-column-start: 1;
+
+    grid-column-end: 11;
+
+    grid-row-start: 1;
+
+    grid-row-end: 1;
+
+   text-align: center;
+}
+
+.NavBar {
+
+    background-color: rgb(107, 155, 35);
+
+    grid-column-start: 1;
+
+    grid-column-end: 11;
+
+    grid-row-start: 2;
+
+    grid-row-end: 2;
+
+}
+
+.Article {
+
+    background-color: rgba(128, 0, 128, 0.507);
+
+    grid-column-start: 1;
+
+    grid-column-end: 6;
+  
+    grid-row: 3/10 ;
+
+}
+
+
+.Aside {
+     background-color: rgb(194, 158, 158);
+
+     grid-column-start: 6;
+
+    grid-column-end: 11;
+
+    grid-row: 3/10;
+}
+
+.Footer {
+
+    background-color: rgb(65, 105, 225);
+
+    grid-column-start: 1;
+
+    grid-column-end: 11;
+
+    grid-row: 10/11;
+}
